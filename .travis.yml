@@ -12,7 +12,7 @@ cache:
     - $HOME/.gradle/wrapper/
 deploy:
   provider: heroku
-  api_key: c5db5af6-e18a-4fe5-8df4-9d8ec5ebb8f6
+  api_key:
     secure: 34ffe567-c5db5af6-e18a-4fe5-8df4-9d8ec5ebb8f6
   app: Servlet
   skip_cleanup: true
