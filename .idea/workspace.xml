@@ -5,7 +5,6 @@
       <change afterPath="$PROJECT_DIR$/../HospitalDatabase/src/main/java/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDatabase/src/main/java/Patient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDatabase/src/main/java/PatientDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/ShapeApp.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/modules/ShapeApp.main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/modules/ShapeApp.test.iml" afterDir="false" />
@@ -304,7 +303,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573118909535</updated>
       <workItem from="1573118913283" duration="2628000" />
-      <workItem from="1573123604762" duration="2101000" />
+      <workItem from="1573123604762" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -355,7 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573125658825</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added gitignore">
+      <created>1573125989434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573125989434</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added gitignore">
+      <created>1573126196174</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573126196174</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
