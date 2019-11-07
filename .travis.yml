@@ -19,5 +19,5 @@ deploy:
   provider: heroku
   api_key:
     secure: c5db5af6-e18a-4fe5-8df4-9d8ec5ebb8f6
-  app: Servlet
+  app: servlet-1
   skip_cleanup: true
