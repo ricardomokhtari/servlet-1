@@ -8,6 +8,10 @@ sourceCompatibility = 1.8
 repositories {
     jcenter() // gretty doesn't exist in mavenCentral, so use jcenter
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
 war{
     from {
         // all of the library jar files used are to be zipped into the war file
