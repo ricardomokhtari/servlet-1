@@ -8,8 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/ShapeApp.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/modules/ShapeApp.main.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/modules/ShapeApp.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -303,7 +301,7 @@
       <updated>1573118909535</updated>
       <workItem from="1573118913283" duration="2628000" />
       <workItem from="1573123604762" duration="4302000" />
-      <workItem from="1573130748335" duration="1156000" />
+      <workItem from="1573130748335" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -424,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573127689275</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added gitignore">
+      <created>1573132426177</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573132426179</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
