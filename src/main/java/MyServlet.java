@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +21,13 @@ public class MyServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String reqBody=req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
-        resp.setContentType("text/html");
-        resp.getWriter().write("Thank you client!");
+        //resp.setContentType("text/html");
+        //resp.getWriter().write("Thank you client!");
+        Gson gson = new Gson();
+        Patient p = gson.fromJson(reqBody,Patient.class);
+        resp.getWriter().write(p.getName());
+        resp.getWriter().write(p.getPhoneNum());
+        resp.getWriter().write(p.getId());
     }
 
 }

@@ -2064,15 +2064,10 @@
       <change afterPath="$PROJECT_DIR$/../../Group_Project/Initial_Research_Report.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Group_Project/temp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../INTERNSHIPS/trait-report_ricardo-mokhtari.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/src/main/java/MyClient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HelloWorldApp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HospitalDB/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/build/classes/java/main/Main.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/build/classes/java/main/Person.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDB/build/distributions/HospitalDB-1.0-SNAPSHOT.zip" afterDir="false" />
@@ -2098,6 +2093,7 @@
       <change afterPath="$PROJECT_DIR$/../PatDB/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PatDB/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PatDB/src/main/java/Equipment/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Patient.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/build/scripts/ShapeApp.bat" afterDir="false" />
@@ -5258,7 +5254,6 @@
       <change afterPath="$PROJECT_DIR$/../../../~$crobiology Practical.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/LectureServlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/LectureServlet-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -5295,7 +5290,7 @@
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle-5.6.2/samples/kotlinDsl/interoperability/kotlinClosure/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/description.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/encodings.xml" beforeDir="false" />
@@ -5306,7 +5301,7 @@
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/modules/ShapeDraw.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/project-template.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PatDB/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShapeDraw/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HospitalDB/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/.travis.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/ShapeDraw.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/build.gradle" beforeDir="false" />
@@ -5416,7 +5411,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -5435,7 +5430,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Servlet [appStart]">
+  <component name="RunManager" selected="Gradle.Servlet [appStop]">
     <configuration name="Servlet [appRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -5448,25 +5443,6 @@
         <option name="taskNames">
           <list>
             <option value="appRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Servlet [appStartWarDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="appStartWarDebug" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -5493,6 +5469,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Servlet [appStop]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="appStop" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Servlet [archiveAllProducts]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -5512,7 +5507,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Servlet [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Servlet [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -5523,7 +5518,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="testClasses" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -5580,11 +5575,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Servlet [build]" />
+        <item itemvalue="Gradle.Servlet [appStop]" />
         <item itemvalue="Gradle.Servlet [appStart]" />
         <item itemvalue="Gradle.Servlet [appRun]" />
         <item itemvalue="Gradle.Servlet [archiveAllProducts]" />
-        <item itemvalue="Gradle.Servlet [appStartWarDebug]" />
-        <item itemvalue="Gradle.Servlet [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -5604,7 +5599,9 @@
       <workItem from="1573133116750" duration="848000" />
       <workItem from="1573165609708" duration="19000" />
       <workItem from="1573656999738" duration="471000" />
-      <workItem from="1573657628431" duration="5747000" />
+      <workItem from="1573657628431" duration="5989000" />
+      <workItem from="1573677921931" duration="240000" />
+      <workItem from="1573679696929" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -5774,7 +5771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573660021937</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added POST request handling">
+      <created>1573677690693</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573677690693</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -5801,6 +5805,7 @@
     <MESSAGE value="Added h1" />
     <MESSAGE value="Added Hamcrest and Mockito" />
     <MESSAGE value="Added unit testing for Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unit testing for Servlet" />
+    <MESSAGE value="Added POST request handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added POST request handling" />
   </component>
 </project>
