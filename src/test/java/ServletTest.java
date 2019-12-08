@@ -29,10 +29,10 @@ public class ServletTest {
         StringWriter stringWriter = new StringWriter();
         PrintWriter printWriter = new PrintWriter(stringWriter);
         when(response.getWriter()).thenReturn(printWriter);
-        when(request.getServletPath()).thenReturn("/patients");
+        when(request.getServletPath()).thenReturn("/");
         MyServlet myServlet = new MyServlet();
         myServlet.doGet(request,response);
         String output=stringWriter.getBuffer().toString();
-        Assert.assertThat(output, is(equalTo("Hello World")));
+        Assert.assertThat(output, is(equalTo("GET Received")));
     }
 }

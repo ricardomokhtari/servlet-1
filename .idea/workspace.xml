@@ -507,8 +507,8 @@
       <change afterPath="$PROJECT_DIR$/../HospitalDB/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HospitalDatabase/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PatDB/build/classes/java/main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatDB/build/scripts/PatDB.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ShapeApp/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ShapeApp/build/scripts/ShapeApp.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle-5.6.2/docs/dsl/base.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle-5.6.2/docs/dsl/org.gradle.api.Buildable.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle-5.6.2/docs/dsl/org.gradle.api.PolymorphicDomainObjectContainer.html" afterDir="false" />
@@ -1295,14 +1295,8 @@
       <change afterPath="$PROJECT_DIR$/../gradle-5.6.2/src/workers/org/gradle/workers/internal/WorkerDaemonMessageSerializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../gradle-5.6.2/src/workers/org/gradle/workers/package-info.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../~$crobiology Practical.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/LectureServlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/LectureServlet-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ServletTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -1363,7 +1357,7 @@
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/distributions/ShapeDraw.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/libs/ShapeDraw.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/scripts/ShapeDraw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/scripts/ShapeDraw.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../PatDB/build/scripts/PatDB.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/scripts/ShapeDraw.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../ShapeApp/build/scripts/ShapeApp.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShapeDraw/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleUI/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
@@ -1725,7 +1719,7 @@
       <workItem from="1574327226127" duration="4906000" />
       <workItem from="1574431671159" duration="379000" />
       <workItem from="1575637723035" duration="5003000" />
-      <workItem from="1575717738634" duration="4663000" />
+      <workItem from="1575717738634" duration="5118000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -1902,7 +1896,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573677690693</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changed POST/GET requests">
+      <created>1575798773935</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1575798773935</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1931,6 +1932,7 @@
     <MESSAGE value="Added unit testing for Servlet" />
     <MESSAGE value="Added POST request handling" />
     <MESSAGE value="Added Patient Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Patient Class" />
+    <MESSAGE value="Changed POST/GET requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed POST/GET requests" />
   </component>
 </project>
