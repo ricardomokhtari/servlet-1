@@ -10,6 +10,8 @@ import java.sql.*;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
+import org.json.*;
+
 @WebServlet(urlPatterns={"/"},loadOnStartup = 1)
 public class MyServlet extends HttpServlet {
     @Override
@@ -48,8 +50,41 @@ public class MyServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String reqBody=req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+        JSONObject obj = new JSONObject(reqBody);
+        String firstname = obj.getString("firstname");
+        String middlename = obj.getString("middlename");
+        String surname = obj.getString("surname");
+        String sex = obj.getString("sex");
+        String ethnicity = obj.getString("ethnicity");
+        String dob = obj.getString("dob");
+
+        String sqlCmd = "(\'"+firstname+"\',\'"+middlename+"\',\'"+surname+"\',\'"+sex+"\',\'"+ethnicity+"\',\'"+dob+"\')";
+        System.out.println(sqlCmd);
+
+        String dbURL = "jdbc:postgresql://ec2-54-195-252-243.eu-west-1.compute.amazonaws.com:5432/din8m6nuaj2gb?ssl" +
+                "=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (Exception e) {
+
+        }
+        resp.setContentType("application/json");
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(dbURL, "username", "password");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            Statement s = conn.createStatement();
+            String sqlStr = "INSERT INTO patient (firstname, middlename, surname, sex, ethnicity, dob) values "+sqlCmd;
+            s.execute(sqlStr);
+            s.close();
+            conn.close();
+        } catch (Exception e) {
+            System.out.println("FAILED");
+        }
         resp.setContentType("text/html");
         resp.getWriter().write("POST Received");
-        System.out.println(reqBody);
     }
 }
