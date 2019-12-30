@@ -26,26 +26,53 @@ public class MyServlet extends HttpServlet {
         resp.setContentType("application/json");
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(dbURL, "username", "password");
+            conn = DriverManager.getConnection(dbURL, "hdzsfwizwsoxxz", "b62525ba2575aa2a67faab4ab24f80234d850305522338e2bb16dd02f474db8e");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        try {
-            Statement s = conn.createStatement();
-            String sqlStr = "select * from users;";
-            ResultSet rset = s.executeQuery(sqlStr);
-            while(rset.next()){
-                Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
-                Gson gson = new Gson();
-                String jsonString = gson.toJson(p);
-                resp.getWriter().write(jsonString + "\n");
-            }
-            rset.close();
-            s.close();
-            conn.close();
-        } catch (Exception e) {
 
+        String path = req.getServletPath();
+        System.out.println(path);
+
+        switch(path){
+            case "/":
+                try {
+                    Statement s = conn.createStatement();
+                    String sqlStr = "select * from users;";
+                    ResultSet rset = s.executeQuery(sqlStr);
+                    while(rset.next()){
+                        Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
+                        Gson gson = new Gson();
+                        String jsonString = gson.toJson(p);
+                        resp.getWriter().write(jsonString + "\n");
+                    }
+                    rset.close();
+                    s.close();
+                    conn.close();
+                } catch (Exception e) {
+                }
+                break;
+            case "/viewpage":
+                try {
+                    Statement s = conn.createStatement();
+                    String sqlStr = "select * from users;";
+                    ResultSet rset = s.executeQuery(sqlStr);
+                    while(rset.next()){
+                        Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
+                        Gson gson = new Gson();
+                        String jsonString = gson.toJson(p);
+                        resp.getWriter().write(jsonString + "\n");
+                    }
+                    rset.close();
+                    s.close();
+                    conn.close();
+                } catch (Exception e) {
+                }
+                break;
+            default:
+                break;
         }
+
     }
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -71,7 +98,7 @@ public class MyServlet extends HttpServlet {
         resp.setContentType("application/json");
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(dbURL, "username", "password");
+            conn = DriverManager.getConnection(dbURL, "hdzsfwizwsoxxz", "b62525ba2575aa2a67faab4ab24f80234d850305522338e2bb16dd02f474db8e");
         } catch (SQLException e) {
             e.printStackTrace();
         }
