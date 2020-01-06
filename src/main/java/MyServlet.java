@@ -135,17 +135,23 @@ public class MyServlet extends HttpServlet {
             // if request comes from view page
             case "/viewpage":
                 try {
+                    // read in info sent from frontend
                     String reqBody2=req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
                     Statement s = conn.createStatement();
+                    // define SQL statement
                     String sqlStr = "select * from " + reqBody2 + ";";
                     System.out.println(sqlStr);
+                    // execute SQL statement
                     ResultSet rset = s.executeQuery(sqlStr);
+                    // setting header necessary for cross-origin requests
                     resp.setHeader("Access-Control-Allow-Origin","*");
                     resp.setContentType("application/json");
                     while (rset.next()) {
+                        // create a record object for sending data to frontend
                         Record r = new Record(rset.getString("id"), rset.getString("date"), rset.getString("imageage"), rset.getString("erythemascore"), rset.getString("edemascore"),rset.getString("exclorationscore"),rset.getString("lichenificationscore"),rset.getString("areascore"),rset.getString("totalscore"),rset.getString("comments"));
                         Gson gson = new Gson();
                         String jsonString = gson.toJson(r);
+                        // send
                         resp.getWriter().write(jsonString + "\n");
                     }
                     rset.close();
