@@ -49,12 +49,16 @@ public class MyServlet extends HttpServlet {
             case "/":
                 try {
                     Statement s = conn.createStatement();
+                    // select all entries in users table
                     String sqlStr = "select * from users;";
                     ResultSet rset = s.executeQuery(sqlStr);
                     while(rset.next()){
+                        // create a patient object to send data as JSON
                         Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
                         Gson gson = new Gson();
+                        // convert patient to JSON
                         String jsonString = gson.toJson(p);
+                        // send
                         resp.getWriter().write(jsonString + "\n");
                     }
                     rset.close();
@@ -101,8 +105,10 @@ public class MyServlet extends HttpServlet {
 
             // if request comes from new patient page
             case "/newpatient":
+                // read in the input from frontend
                 String reqBody=req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
                 JSONObject obj = new JSONObject(reqBody);
+                // extract fields
                 String firstname = obj.getString("firstname");
                 String middlename = obj.getString("middlename");
                 String surname = obj.getString("surname");
@@ -110,11 +116,13 @@ public class MyServlet extends HttpServlet {
                 String ethnicity = obj.getString("ethnicity");
                 String dob = obj.getString("dob");
 
+                // define SQL command with fields entered
                 String sqlCmd = "(\'"+firstname+"\',\'"+middlename+"\',\'"+surname+"\',\'"+sex+"\',\'"+ethnicity+"\',\'"+dob+"\')";
                 System.out.println(sqlCmd);
 
                 try {
                     Statement s = conn.createStatement();
+                    // insert new patient into patient table
                     String sqlStr = "INSERT INTO patient (firstname, middlename, surname, sex, ethnicity, dob) values "+sqlCmd;
                     s.execute(sqlStr);
                     s.close();
