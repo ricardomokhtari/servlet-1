@@ -7,7 +7,11 @@ The MyServlet.java file contains the code for the backend java servlet that hand
 #### Authors
 
 Amar Singh Danda
+
 Hia Ming
+
 Ricardo Mokhtari
+
 Sarah Underwood
+
 James Urban
