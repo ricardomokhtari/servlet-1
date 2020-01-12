@@ -1439,6 +1439,16 @@
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="din8m6nuaj2gb@ec2-54-195-252-243.eu-west-1.compute.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="din8m6nuaj2gb: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="headnneck: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
@@ -1485,6 +1495,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -1718,7 +1733,7 @@
       <workItem from="1577358378170" duration="15185000" />
       <workItem from="1577669690755" duration="3119000" />
       <workItem from="1577790710149" duration="21063000" />
-      <workItem from="1578674743949" duration="3981000" />
+      <workItem from="1578674743949" duration="6067000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -1937,7 +1952,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578348987725</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Changed paths">
+      <created>1578848826407</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1578848826407</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Changed paths">
+      <created>1578848944709</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1578848944709</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1969,7 +1998,8 @@
     <MESSAGE value="Added gitignore" />
     <MESSAGE value="Added new patient functionality in doPost" />
     <MESSAGE value="Added more comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more comments" />
+    <MESSAGE value="Changed paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed paths" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1368" y="178" key="#Project_Structure" />

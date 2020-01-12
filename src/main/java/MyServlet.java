@@ -165,9 +165,19 @@ public class MyServlet extends HttpServlet {
                 try{
                     // read in info sent from frontend
                     String reqBody3 = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+                    JSONObject obj1 = new JSONObject(reqBody3);
+                    // extract fields
+                    String date = obj1.getString("date");
+                    String region = obj1.getString("region");
+                    String erythema = obj1.getString("erythema");
+                    String edema = obj1.getString("edema");
+                    String excoriation = obj1.getString("excoriation");
+                    String lichenification = obj1.getString("lichenification");
+                    String areaScore = obj1.getString("areaScore");
+                    String totalScore = obj1.getString("totalScore");
                     Statement s = conn.createStatement();
                     // define SQL statement
-                    String sqlStr = "";
+                    String sqlStr = "INSERT INTO" + region + " (\'"+date+"\',"+erythema+","+edema+","+","+excoriation+","+lichenification+","+areaScore+","+totalScore+")";
                     System.out.println(sqlStr);
                     // execute SQL statement
                     ResultSet rset = s.executeQuery(sqlStr);
