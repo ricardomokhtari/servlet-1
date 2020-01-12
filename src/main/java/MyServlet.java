@@ -46,7 +46,7 @@ public class MyServlet extends HttpServlet {
         switch(path){
 
             // if request came from homepage
-            case "/":
+            case "/home":
                 try {
                     Statement s = conn.createStatement();
                     // select all entries in users table
@@ -160,6 +160,34 @@ public class MyServlet extends HttpServlet {
                 } catch (Exception e){
                     System.out.println("FAILED");
                 }
+                break;
+            case "/upload":
+                try{
+                    // read in info sent from frontend
+                    String reqBody3 = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+                    Statement s = conn.createStatement();
+                    // define SQL statement
+                    String sqlStr = "";
+                    System.out.println(sqlStr);
+                    // execute SQL statement
+                    ResultSet rset = s.executeQuery(sqlStr);
+                    // setting header necessary for cross-origin requests
+                    resp.setHeader("Access-Control-Allow-Origin","*");
+                    resp.setContentType("application/json");
+                    while (rset.next()) {
+
+
+                    }
+                    rset.close();
+                    s.close();
+                    conn.close();
+                } catch (Exception e){
+                    System.out.println("FAILED");
+                }
+                break;
+            case "/":
+                break;
+            case "/create":
                 break;
             default:
                 break;
