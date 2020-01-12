@@ -1380,7 +1380,6 @@
       <change beforePath="$PROJECT_DIR$/../SimpleUI/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleUI/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SimpleUI/src/main/java/SimpleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleUI/src/main/java/SimpleUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -1502,6 +1501,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -1679,9 +1679,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Servlet [build]" />
         <item itemvalue="Gradle.Servlet [appStop]" />
         <item itemvalue="Gradle.Servlet [appStart]" />
-        <item itemvalue="Gradle.Servlet [build]" />
         <item itemvalue="Gradle.Servlet [appRun]" />
         <item itemvalue="Application.Main" />
       </list>
