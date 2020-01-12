@@ -184,10 +184,7 @@ public class MyServlet extends HttpServlet {
                     // setting header necessary for cross-origin requests
                     resp.setHeader("Access-Control-Allow-Origin","*");
                     resp.setContentType("application/json");
-                    while (rset.next()) {
-
-
-                    }
+                    resp.getWriter().write(sqlStr);
                     rset.close();
                     s.close();
                     conn.close();
