@@ -1733,7 +1733,7 @@
       <workItem from="1577358378170" duration="15185000" />
       <workItem from="1577669690755" duration="3119000" />
       <workItem from="1577790710149" duration="21063000" />
-      <workItem from="1578674743949" duration="6067000" />
+      <workItem from="1578674743949" duration="6472000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1573124325054</created>
@@ -1966,7 +1966,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578848944709</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Edited upload">
+      <created>1578851635552</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1578851635552</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1999,7 +2006,8 @@
     <MESSAGE value="Added new patient functionality in doPost" />
     <MESSAGE value="Added more comments" />
     <MESSAGE value="Changed paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed paths" />
+    <MESSAGE value="Edited upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1368" y="178" key="#Project_Structure" />
