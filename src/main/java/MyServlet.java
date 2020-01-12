@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
+import java.text.DecimalFormat;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -19,7 +20,7 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // database URL
         String dbURL = "jdbc:postgresql://ec2-54-195-252-243.eu-west-1.compute.amazonaws.com:5432/din8m6nuaj2gb?ssl" +
-               "=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+                "=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
         try {
             // try to connect to postgres driver
             Class.forName("org.postgresql.Driver");
@@ -54,7 +55,8 @@ public class MyServlet extends HttpServlet {
                     ResultSet rset = s.executeQuery(sqlStr);
                     while(rset.next()){
                         // create a patient object to send data as JSON
-                        Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
+                        Patient p = new Patient(rset.getString("id"),rset.getString("Latest severity score"),
+                                rset.getString("DOB"),rset.getString("Sex"),rset.getString("Last updated"));
                         Gson gson = new Gson();
                         // convert patient to JSON
                         String jsonString = gson.toJson(p);
@@ -120,6 +122,7 @@ public class MyServlet extends HttpServlet {
                 String sqlCmd = "(\'"+firstname+"\',\'"+middlename+"\',\'"+surname+"\',\'"+sex+"\',\'"+ethnicity+"\',\'"+dob+"\')";
                 System.out.println(sqlCmd);
 
+
                 try {
                     Statement s = conn.createStatement();
                     // insert new patient into patient table
@@ -148,7 +151,7 @@ public class MyServlet extends HttpServlet {
                     resp.setContentType("application/json");
                     while (rset.next()) {
                         // create a record object for sending data to frontend
-                        Record r = new Record(rset.getString("id"), rset.getString("date"), rset.getString("imageage"), rset.getString("erythemascore"), rset.getString("edemascore"),rset.getString("exclorationscore"),rset.getString("lichenificationscore"),rset.getString("areascore"),rset.getString("totalscore"),rset.getString("comments"));
+                        Record r = new Record(rset.getString("id"), rset.getString("date"), rset.getString("imageage"), rset.getString("erythemascore"), rset.getString("edemascore"),rset.getString("exclorationscore"),rset.getString("lichenificationscore"),rset.getString("areascore"),rset.getFloat("totalscore"),rset.getString("comments"));
                         Gson gson = new Gson();
                         String jsonString = gson.toJson(r);
                         // send
@@ -165,27 +168,25 @@ public class MyServlet extends HttpServlet {
                 try{
                     // read in info sent from frontend
                     String reqBody3 = req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+                    System.out.println(reqBody3);
                     JSONObject obj1 = new JSONObject(reqBody3);
                     // extract fields
                     String date = obj1.getString("date");
                     String region = obj1.getString("region");
-                    String erythema = obj1.getString("erythema");
-                    String edema = obj1.getString("edema");
-                    String excoriation = obj1.getString("excoriation");
-                    String lichenification = obj1.getString("lichenification");
-                    String areaScore = obj1.getString("areaScore");
-                    String totalScore = obj1.getString("totalScore");
+                    int erythema = obj1.getInt("erythema");
+                    int edema = obj1.getInt("edema");
+                    int excoriation = obj1.getInt("excoriation");
+                    int lichenification = obj1.getInt("lichenification");
+                    int areaScore = obj1.getInt("areaScore");
+                    double totalScore = obj1.getDouble("totalScore");
                     Statement s = conn.createStatement();
                     // define SQL statement
-                    String sqlStr = "INSERT INTO" + region + " (\'"+date+"\',"+erythema+","+edema+","+","+excoriation+","+lichenification+","+areaScore+","+totalScore+")";
+                    String sqlStr = "INSERT INTO " + region + "(date, erythemascore, edemascore, exclorationscore, " +
+                            "lichenificationscore, areascore, totalscore) values" + "(\'"+date+"\',"+erythema+","+edema+
+                            ","+excoriation+","+lichenification+","+areaScore+","+totalScore+")";
                     System.out.println(sqlStr);
                     // execute SQL statement
-                    ResultSet rset = s.executeQuery(sqlStr);
-                    // setting header necessary for cross-origin requests
-                    resp.setHeader("Access-Control-Allow-Origin","*");
-                    resp.setContentType("application/json");
-                    resp.getWriter().write(sqlStr);
-                    rset.close();
+                    s.execute(sqlStr);
                     s.close();
                     conn.close();
                 } catch (Exception e){

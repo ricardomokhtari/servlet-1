@@ -9,10 +9,10 @@ public class Record implements Serializable{
     private String exclorationscore;
     private String lichenificationscore;
     private String areascore;
-    private String totalscore;
+    private float totalscore;
     private String comments;
 
-    Record(String id, String date, String imageage, String erythemascore, String edemascore, String exclorationscore, String lichenificationscore, String areascore, String totalscore, String comments){
+    Record(String id, String date, String imageage, String erythemascore, String edemascore, String exclorationscore, String lichenificationscore, String areascore, float totalscore, String comments){
         this.id = id;
         this.date = date;
         this.imageage = imageage;
